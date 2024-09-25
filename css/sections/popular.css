@@ -1,0 +1,159 @@
+.personal-fav {
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary-color);
+    background-image: url("../../assets/popular_bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    overflow: hidden;
+}
+
+.personal-fav__title {
+    font-size: 56px;
+    font-family: var(--playfair-display);
+    font-weight: 600;
+    line-height: 78px;
+    color: #fff;
+    text-align: center;
+}
+
+.personal-fav__catalogue {
+    margin-top: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 65px;
+}
+
+.personal-fav__button {
+    width: fit-content;
+    padding: 20px 30px;
+    margin: 80px auto 0;
+
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 20px;
+    font-family: var(--plus-jakarta-sans);
+    color: var(--color-creamson);
+    border: none;
+    outline: none;
+    background: var(--secondary-color);
+    border-radius: 64px;
+    cursor: pointer;
+}
+
+.personal-fav__button img {
+   width: 14px;
+   height: 14px;
+   object-fit: contain;
+   margin-left: 15px;
+}
+
+.personal-fav__card {
+    padding: 38px;
+    min-width: 260px;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    border-radius: 36px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.personal-fav__card-image {
+    width: 240px;
+    height: 160px;
+    object-fit: contain;
+}
+
+.personal-fav__card-horsepower img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.personal-fav__card-horsepower {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.personal-fav__card-horsepower p{
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+}
+
+.personal-fav__card-title {
+    margin-top: 47px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    font-family: var(--playfair-display);
+    color: #fff;
+    text-align: center;
+}
+
+.personal-fav__card-details {
+    width: 100%;
+    margin-top: 32px;
+}
+
+.personal-fav__card-speed {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.personal-fav__card-speed img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.personal-fav__card-speed p {
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+}
+.personal-fav__card-price {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--plus-jakarta-sans);
+    color: #fff;
+}
+
+.personal-fav__card.active-card {
+    background: #fff;
+    min-width: 340px;
+}
+.personal-fav__card.active-card .personal-fav__card-image{
+    width: 240px;
+    height: 160px;
+}
+.personal-fav__card.active-card .personal-fav__card-title{
+    color: var(--black-500);
+    font-size: 32px;
+}
+.personal-fav__card.active-card .personal-fav__card-horsepower img{
+    width: 32px;
+    height: 32px;
+}
+.personal-fav__card.active-card .personal-fav__card-speed p{
+    font-size: 24px;
+    color: var(--gray-100);
+}
+.personal-fav__card.active-card .personal-fav__card-horsepower p{
+    font-size: 24px;
+    color: var(--gray-100);
+}
